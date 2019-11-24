@@ -29,4 +29,10 @@ public class EndangeredTest {
         Endangered testAnimal = new Endangered("lion","okay", "young");
         assertEquals("young", testAnimal.getAge());
     }
+    @Test
+    public void save_savesEndangeredAnimalObjectsIntoDB(){
+        Endangered testAnimal = new Endangered("lion","okay", "young");
+        testAnimal.save();
+        assertTrue(Endangered.all().get(0).equals(testAnimal));
+    }
 }
