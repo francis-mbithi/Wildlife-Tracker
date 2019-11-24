@@ -3,7 +3,7 @@ import org.sql2o.*;
 
 import java.util.List;
 
-public class Endangered extends Animals {
+public class Endangered extends Animals{
     private String health;
     private String age;
 
@@ -21,18 +21,14 @@ public class Endangered extends Animals {
         this.age = age;
         endangered = true;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getHealth() {
+    public String getName(){return name;}
+    public String getHealth(){
         return health;
     }
-
-    public String getAge() {
+    public String getAge(){
         return age;
     }
+
     @Override
     public void save(){
         super.save();
@@ -42,6 +38,34 @@ public class Endangered extends Animals {
                     .addParameter("health", this.health)
                     .addParameter("age", this.age)
                     .addParameter("id", this.id)
+                    .executeUpdate();
+        }
+    }
+    public static List<Endangered> all(){
+        String sql = "SELECT * FROM animals;";
+        try(Connection connect= DB.sql2o.open()){
+            return connect.createQuery(sql).executeAndFetch(Endangered.class);
+        }
+    }
+    public static Endangered find(int id){
+        try(Connection connect = DB.sql2o.open()){
+            String sql = "SELECT * FROM animals WHERE id= :id;";
+            Endangered animal = connect.createQuery(sql)
+                    .addParameter("id", id)
+                    .throwOnMappingFailure(false)
+                    .executeAndFetchFirst(Endangered.class);
+            if (animal == null) {
+                throw new IndexOutOfBoundsException("Sorry, this animal cannot be found.");
+            }
+            return animal;
+        }
+    }
+    public void update(String name, String health){
+        try(Connection connect = DB.sql2o.open()){
+            String sql = "UPDATE animals SET (name, health) = (:name, :health) WHERE id = :id;";
+            connect.createQuery(sql)
+                    .addParameter("name", name)
+                    .addParameter("health", health)
                     .executeUpdate();
         }
     }
