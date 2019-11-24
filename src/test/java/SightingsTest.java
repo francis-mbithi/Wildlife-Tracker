@@ -18,4 +18,14 @@ public class SightingsTest {
         Sightings testSighting = new Sightings("area 1", "Vick", 1);
         assertEquals("area 1", testSighting.getLocation());
     }
+    Test
+    public void getLocation_instantiatesWithRangerName_String() {
+        Sightings testSighting = new Sightings("area 1", "Vick", 1);
+        assertEquals("Vick", testSighting.getRangerName());
+    }
+    @Test
+    public void getLocation_instantiatesWithAnimalId_int() {
+        Sightings testSighting = new Sightings("area 1", "Vick", 1);
+        assertEquals(1, testSighting.getAnimalId());
+    }
 }
