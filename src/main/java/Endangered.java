@@ -33,4 +33,16 @@ public class Endangered extends Animals {
     public String getAge() {
         return age;
     }
+    @Override
+    public void save(){
+        super.save();
+        try(Connection connect= DB.sql2o.open()){
+            String sql = "UPDATE animals SET health=:health, age=:age WHERE id=:id";
+            connect.createQuery(sql, true)
+                    .addParameter("health", this.health)
+                    .addParameter("age", this.age)
+                    .addParameter("id", this.id)
+                    .executeUpdate();
+        }
+    }
 }
