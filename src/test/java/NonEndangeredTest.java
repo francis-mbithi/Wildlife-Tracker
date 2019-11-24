@@ -39,4 +39,21 @@ public class NonEndangeredTest {
         NonEndangered savedAnimal = NonEndangered.all().get(0);
         assertEquals(testAnimal.getId(), savedAnimal.getId());
     }
+    @Test
+    public void all_returnsAllInstancesOfNonEndangeredAnimals_true(){
+        NonEndangered firstAnimal = new NonEndangered("bees");
+        firstAnimal.save();
+        NonEndangered secondAnimal = new NonEndangered("zebra");
+        secondAnimal.save();
+        assertEquals(true, NonEndangered.all().get(0).equals(firstAnimal));
+        assertEquals(true, NonEndangered.all().get(1).equals(secondAnimal));
+    }
+    @Test
+    public void find_returnsNonEndangeredAnimalsWithSameId_firstAnimal(){
+        NonEndangered firstAnimal = new NonEndangered("bees");
+        firstAnimal.save();
+        NonEndangered secondAnimal = new NonEndangered("zebra");
+        secondAnimal.save();
+        assertEquals(NonEndangered.find(firstAnimal.getId()), firstAnimal);
+    }
 }
