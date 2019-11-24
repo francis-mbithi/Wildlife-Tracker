@@ -19,4 +19,19 @@ public class Sightings {
     public String getLocation() {
         return location;
     }
+    public String getRangerName() {
+        return rangerName;
+    }
+
+    public Timestamp getSpotted() {
+        return spotted;
+    }
+
+    public int getAnimalId() {
+        return animalId;
+    }
+
+    public int getId() {
+        return id;
+    }
 }
