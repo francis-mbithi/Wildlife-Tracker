@@ -26,4 +26,17 @@ public class NonEndangeredTest {
         NonEndangered secondAnimal = new NonEndangered("bees");
         assertTrue(firstAnimal.equals(secondAnimal));
     }
+    @Test
+    public void save_savesNonEndangeredAnimalsIntoDatabase(){
+        NonEndangered testanimal = new NonEndangered("bees");
+        testanimal.save();
+        assertTrue(NonEndangered.all().get(0).equals(testanimal));
+    }
+    @Test
+    public void save_saveAssignsIdToNonEndangeredAnimal_int(){
+        NonEndangered testAnimal = new NonEndangered("bees");
+        testAnimal.save();
+        NonEndangered savedAnimal = NonEndangered.all().get(0);
+        assertEquals(testAnimal.getId(), savedAnimal.getId());
+    }
 }
