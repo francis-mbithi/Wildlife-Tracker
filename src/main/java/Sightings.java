@@ -1,9 +1,10 @@
+//package wildlifeTracker;
 import org.sql2o.*;
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.util.List;
 
-public class Sightings {
+public class Sightings{
     private String location;
     private String rangerName;
     private Timestamp spotted;
@@ -19,6 +20,7 @@ public class Sightings {
     public String getLocation() {
         return location;
     }
+
     public String getRangerName() {
         return rangerName;
     }
@@ -34,9 +36,11 @@ public class Sightings {
     public int getId() {
         return id;
     }
+
     public String getFormattedDate() {
         return DateFormat.getDateTimeInstance().format(spotted);
     }
+
     @Override
     public boolean equals(Object anotherSighting){
         if(!(anotherSighting instanceof Sightings)){
@@ -76,5 +80,4 @@ public class Sightings {
             return sighting;
         }
     }
-
 }
