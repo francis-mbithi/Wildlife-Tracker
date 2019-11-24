@@ -34,4 +34,8 @@ public class Sightings {
     public int getId() {
         return id;
     }
+    public String getFormattedDate() {
+        return DateFormat.getDateTimeInstance().format(spotted);
+    }
+
 }
