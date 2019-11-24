@@ -28,4 +28,16 @@ public class SightingsTest {
         Sightings testSighting = new Sightings("area 1", "Vick", 1);
         assertEquals(1, testSighting.getAnimalId());
     }
+    @Test
+    public void equals_returnsTrueIfSightingsObjectsAreTrue_true(){
+        Sightings firstSighting = new Sightings("area 1", "Vick", 1);
+        Sightings secondSighting = new Sightings("area 1", "Vick", 1);
+        assertTrue(firstSighting.equals(secondSighting));
+    }
+    @Test
+    public void save_savesSightingsObjectsIntoDatabase(){
+        Sightings testSighting = new Sightings("area 1", "Vick", 1);
+        testSighting.save();
+        assertEquals(true, Sightings.all().get(0).equals(testSighting));
+    }
 }
