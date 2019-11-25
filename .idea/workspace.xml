@@ -4,13 +4,28 @@
     <list default="true" id="5b6d9cc1-2c92-47cf-9a95-a08f91abbbbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/EndangeredTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/EndangeredTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/images/acacialogo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/images/acacialogo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/images/savannah.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/images/savannah.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.vtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-EndangeredTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-EndangeredTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/images/acacialogo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/acacialogo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/images/savannah.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/savannah.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EndangeredTest.all_returnsAllInstancesOfEndangeredAnimals_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EndangeredTest.all_returnsAllInstancesOfEndangeredAnimals_true&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -117,12 +132,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EndangeredTest.find_returnsEndangeredAnimalWithSameId_secondAnimal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NonEndangeredTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EndangeredTest.find_returnsEndangeredAnimalWithSameId_secondAnimal&quot;" />
+        <option name="scriptParameters" value="--tests &quot;NonEndangeredTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -137,12 +152,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EndangeredTest.save_savesEndangeredAnimalObjectsIntoDB" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SightingsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EndangeredTest.save_savesEndangeredAnimalObjectsIntoDB&quot;" />
+        <option name="scriptParameters" value="--tests &quot;SightingsTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -159,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EndangeredTest" />
+        <item itemvalue="Gradle.NonEndangeredTest" />
+        <item itemvalue="Gradle.SightingsTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.EndangeredTest.endangered_instantiatesWithAgeOfAnimal_String" />
-        <item itemvalue="Gradle.EndangeredTest.save_savesEndangeredAnimalObjectsIntoDB" />
-        <item itemvalue="Gradle.EndangeredTest.all_returnsAllInstancesOfEndangeredAnimals_true" />
-        <item itemvalue="Gradle.EndangeredTest.find_returnsEndangeredAnimalWithSameId_secondAnimal" />
       </list>
     </recent_temporary>
   </component>
