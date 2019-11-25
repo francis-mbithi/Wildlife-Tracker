@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EndangeredTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T08:06:29" hostname="francis-HP-250-G1-Notebook-PC" time="0.264">
+  <properties/>
+  <testcase name="endangered_instantiatesWithAgeOfAnimal_String" classname="EndangeredTest" time="0.264"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,4 +1,3 @@
-//package wildlifeTracker;
 import org.sql2o.*;
 import java.sql.Timestamp;
 import java.text.DateFormat;

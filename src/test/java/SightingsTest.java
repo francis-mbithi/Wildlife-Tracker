@@ -6,19 +6,17 @@ import java.sql.Timestamp;
 public class SightingsTest {
     @Rule
     public DatabaseRules database = new DatabaseRules();
-
     @Test
-    public void Sightings_instantiatesCorrectly_true() {
-        Sightings testSighting = new Sightings("area 1", "Vick", 1);
+    public void Sightings_instantiatesCorrectly_true(){
+        Sightings testSighting = new Sightings("area 1", "Vick",1);
         assertEquals(testSighting instanceof Sightings, true);
     }
-
     @Test
-    public void getLocation_instantiatesWithLocation_String() {
-        Sightings testSighting = new Sightings("area 1", "Vick", 1);
+    public void getLocation_instantiatesWithLocation_String(){
+        Sightings testSighting = new Sightings("area 1", "Vick",1);
         assertEquals("area 1", testSighting.getLocation());
     }
-    Test
+    @Test
     public void getLocation_instantiatesWithRangerName_String() {
         Sightings testSighting = new Sightings("area 1", "Vick", 1);
         assertEquals("Vick", testSighting.getRangerName());
@@ -64,4 +62,5 @@ public class SightingsTest {
         secondSighting.save();
         assertEquals(Sightings.find(secondSighting.getId()), secondSighting);
     }
+
 }
