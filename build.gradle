@@ -21,6 +21,6 @@ dependencies {
 }
 
 
-mainClassName = 'wildlifeTracker.App'
-applicationName = "wildlifeTracker"
+mainClassName = 'WildlifeTracker.App'
+applicationName = "WildlifeTracker"
 task stage(dependsOn: ['clean', 'installDist'])
